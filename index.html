@@ -39,9 +39,10 @@
 			</div>
 			<div class="lesson">
 				<div class="list">
+					<div class="title">:target / :hover / display</div>
 					<ul>
 						<li><a href="#target">target section 1</a> </li>
-						<li><a href="#target-section-2">target section 1</a> </li>
+						<li><a href="#target-section-2">target section 2</a> </li>
 
 						<li> <a href="#">Lorem, ipsum dolor.</a> 
 							<ul class="display-none">
@@ -67,14 +68,62 @@
 					<div class="target section-2" id="target-section-2"></div>
 				</div>
 				<div class="link">
+					<h1 class="title">:link / :visited / :hover / :focus</h1>
 					<a href="#" class="active">Link active</a>
 					<a href="#" class="visited">Link visited</a>
 					<a href="#" class="hover">Link hover</a>
+					<input type="text" class="focus" name="text" id="" placeholder=":focus">
 				</div>
+				<div class="title">::before / ::after</div>
 				<div class="before"></div>
 				<div class="after"></div>
 
+				<div class="list-block">
+					<div class="title">:nth-child() / ::after</div>
+					<ul class="list-child">
+						<li>Lorem, ipsum.</li>
+						<li>Lorem, ipsum dolor, ipsum.</li>
+						<li>Lorem ipsum dolor sit, ipsum.</li>
+						<li>Lorem, ipsum dolor, ipsum.</li>
+						<li>Lorem ipsum dolor sit, ipsum.</li>
+						<li>Lorem, ipsum.</li>
+					</ul>
+				</div>
+				<div class="list-block2">
+					<div class="title">:first-child / :last-child ::before</div>
+					<ul class="list-first-child">
+						<li>Lorem, ipsum.</li>
+						<li>Lorem, ipsum dolor, ipsum.</li>
+						<li>Lorem ipsum dolor sit, ipsum.</li>
+						<li>Lorem, ipsum dolor, ipsum.</li>
+						<li>Lorem ipsum dolor sit, ipsum.</li>
+						<li>Lorem, ipsum.</li>
+					</ul>
+				</div>
+				<div class="list-block3">
+					<div class="title">:nth-child(even)</div>
+					<ul class="list-even">
+						<li>Lorem, ipsum.</li>
+						<li>Lorem, ipsum dolor, ipsum.</li>
+						<li>Lorem ipsum dolor sit, ipsum.</li>
+						<li>Lorem, ipsum dolor, ipsum.</li>
+						<li>Lorem ipsum dolor sit, ipsum.</li>
+						<li>Lorem, ipsum.</li>
+					</ul>
+					<div class="title">nth-child(odd) / :last-of-type</div>
+
+					<ul class="list-odd">
+						<li>Lorem, ipsum.</li>
+						<li>Lorem, ipsum dolor, ipsum.</li>
+						<li>Lorem ipsum dolor sit, ipsum.</li>
+						<li>Lorem, ipsum dolor, ipsum.</li>
+						<li>Lorem ipsum dolor sit, ipsum.</li>
+						<li>Lorem, ipsum.</li>
+					</ul>
+				</div>
+
 				<div class="game">
+					<div class="title">Game</div>
 					<div class="start-btn"><a href="#game-section">Play</a></div>
 					<div class="game-section" id="game-section">
 						<div class="point_start">Start</div>
@@ -90,7 +139,6 @@
 					</div>
 				</div>
 			</div>
-			
 		</main>
 		<footer></footer>
 	</body>

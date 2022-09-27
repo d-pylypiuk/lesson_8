@@ -55,7 +55,7 @@ h3{
 }
 .block-list li:hover::before{
 	transition: all .3s ease-in-out 0s;
-	transform: rotate(90deg);
+	transform: rotate(360deg);
 }
 .block1 h1{
 	margin-bottom: 40px;
@@ -141,6 +141,7 @@ ul li:hover > ul{
 	margin-bottom: 60px;
 }
 .link a{
+	font-size: 20px;
 	color: rgb(24, 99, 49);
 	padding: 10px 20px;
 	margin-right: 20px;
@@ -152,9 +153,28 @@ ul li:hover > ul{
 }
 .visited:visited{
 	color: rgb(220, 20, 20);
+	font-size: 20px;
 }
 .hover:hover{
 	background-color: yellow;
+}
+input.focus{
+	transition: all .3s ease-in-out .0s;
+	font-size: 20px;
+	height: 40px;
+	width: 100px;
+	background-color: rgb(193, 199, 201);
+	/* border: 1px solid gray; */
+	padding: 0px 20px;
+	border-radius: 4px;
+}
+.focus:focus{
+	height: 40px;
+	width: 300px;
+	font-size: 20px;
+	letter-spacing: 20px;
+	outline: 1px solid rgb(136, 136, 136);
+	box-shadow: 1px 1px 3px #444;
 }
 .before, .after{
 	padding: 60px;
@@ -191,6 +211,133 @@ ul li:hover > ul{
 .after:hover::after{
 	display: inline;
 }
+/* ========= list child ======== */
+.list-block, .list-block2, .list-block3{
+	margin-bottom: 60px;
+}
+.list-block ul li, .list-block2 ul li, .list-block3 ul li{
+	font-size: 20px ;
+	font-weight: 700;
+	color: #444;
+	padding: 10px 30px;
+	margin-bottom: 5px;
+	border: 1px solid rgb(182, 182, 182);
+}
+/* .list-block2 ul li{
+	font-size: 20px ;
+	font-weight: 700;
+	color: #444;
+	padding: 10px 30px;
+	margin-bottom: 5px;
+	border: 1px solid rgb(182, 182, 182);
+} */
+.list-block ul li:nth-child(1)::after{
+	content: '1';
+	height:25px;
+	width: 25px;
+	color: aliceblue;
+	text-align: center;
+	line-height: 24px;
+	border-radius:50%;
+	background-color:rgb(95, 255, 80);
+	display:inline-block
+}
+.list-block ul li:nth-child(2)::after{
+	content: '2';
+	height:25px;
+	width: 25px;
+	color: aliceblue;
+	text-align: center;
+	line-height: 24px;
+	border-radius:50%;
+	background-color:rgb(57, 207, 89);
+	display:inline-block
+}
+.list-block ul li:nth-child(3)::after{
+	content: '3';
+	height:25px;
+	width: 25px;
+	color: aliceblue;
+	text-align: center;
+	line-height: 24px;
+	border-radius:50%;
+	background-color:rgb(80, 127, 255);
+	display:inline-block
+}
+.list-block ul li:nth-child(4)::after{
+	content: '4';
+	height:25px;
+	width: 25px;
+	color: aliceblue;
+	text-align: center;
+	line-height: 24px;
+	border-radius:50%;
+	background-color:rgb(127, 80, 255);
+	display:inline-block
+}
+.list-block ul li:nth-child(5)::after{
+	content: '5';
+	height:25px;
+	width: 25px;
+	color: aliceblue;
+	text-align: center;
+	line-height: 24px;
+	border-radius:50%;
+	background-color:rgb(80, 135, 255);
+	display:inline-block
+}
+.list-block ul li:nth-child(6)::after{
+	content: '6';
+	height:25px;
+	width: 25px;
+	color: aliceblue;
+	text-align: center;
+	line-height: 24px;
+	border-radius:50%;
+	background-color:coral;
+	display:inline-block
+}
+/* ========= list-first-child====== */
+.list-first-child li:first-child::before{
+	margin-right: 10px;
+	content: ':first-child';
+	font-size: 16px;
+	padding: 5px;
+	color: aliceblue;
+	text-align: center;
+	border-radius:5px;
+	background-color:rgb(80, 112, 255);
+	display:inline-block
+}
+.list-first-child li:last-child::before{
+	margin-right: 10px;
+	content: ':last-child';
+	font-size: 16px;
+	padding: 5px;
+	color: aliceblue;
+	text-align: center;
+	border-radius:5px;
+	background-color:rgb(255, 185, 80);
+	display:inline-block
+}
+
+/* ======== list-even ====== */
+.list-block3 ul{
+	margin-bottom: 40px;
+}
+.list-block3 ul:last-of-type{
+	margin-bottom: 0px;
+}
+.list-even li:nth-child(even){
+	border-color: rgb(167, 85, 55);
+	color: #787A80;
+}
+.list-odd li:nth-child(odd){
+	border-color: rgb(122, 55, 167);
+	color: #3b3b3b;
+}
+
+
 /* ============== game ==============
  */
  .game{
@@ -207,7 +354,6 @@ ul li:hover > ul{
 	background-color: darkorange;
  }
  .game-section{
-	position: relative;
 	border: 1px solid gray;
 	height: 600px;
 	display: none;
@@ -276,9 +422,6 @@ ul li:hover > ul{
 	visibility: visible;
  }
  .game-section > div.point_finish{
-	position: absolute;
-	top: 0px;
-	left: 0px;
 	visibility: hidden;
 	background-color: blue;
 	width: 100%;
